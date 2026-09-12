@@ -25,12 +25,12 @@ SECRET_KEY = 'django-insecure-2&5l&e88!-0x$57jmw#y9p9)q2&2pig_bee9p$!3kx)_z!$3f5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1'] #Host permitidos, en este caso mi 'localhost' '127.0.0.1' predeterminado.
 
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [  #Acá uno agrega las aplicaciones que trabajará, en este caso agregué 'diario'.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
