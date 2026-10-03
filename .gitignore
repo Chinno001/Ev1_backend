@@ -1,1 +1,24 @@
 proyecto_django/.env
+# Variables de entorno y credenciales
+.env
+*.env
+proyecto_django/.env
+
+# Base de datos local (para no subir datos de prueba)
+*.sqlite3
+db.sqlite3
+
+# Archivos compilados y cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos del sistema operativo y editores
+.DS_Store
+.vscode/
+.idea/
