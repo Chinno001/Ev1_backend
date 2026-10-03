@@ -1,6 +1,6 @@
 # API REST - Sistema de Diario Personal
 
-Este proyecto es una API REST desarrollada con **Django** y **Django REST Framework (DRF)** correspondiente a las clases de BackEnd. Permite gestionar entradas de diario y comentarios mediante un CRUD completo, persistencia de datos en MySQL y configuración mediante variables de entorno.
+Este proyecto es una API REST desarrollada con **Django** y **Django REST Framework (DRF)** correspondiente a las asignaturas de BackEnd. Permite gestionar entradas de diario y comentarios mediante un CRUD completo, persistencia de datos en MySQL y configuración mediante variables de entorno.
 
 ---
 
@@ -22,9 +22,14 @@ Este proyecto es una API REST desarrollada con **Django** y **Django REST Framew
 
 ---
 
-## Instrucciones de Instalación y Configuración
+## Estructura del Proyecto
 
-### 1. Clonar el repositorio
-```bash
-git clone <https://github.com/Chinno001/Ev1_backend/tree/main>
-cd <NOMBRE_DE_TU_CARPETA>
+```text
+Ev1_backend/
+├── diario/                # Aplicación principal del diario
+├── backend_project/       # Configuración principal de Django (settings, urls, etc.)
+├── .env.example           # Plantilla de variables de entorno
+├── .gitignore             # Archivos excluidos de Git
+├── manage.py              # Script de gestión de Django
+├── README.md              # Documentación del proyecto
+└── requirements.txt       # Dependencias del proyecto
