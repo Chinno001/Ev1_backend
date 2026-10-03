@@ -1,15 +1,11 @@
 from django.db import models
 import datetime
 
-ahora = datetime.datetime.now() #Variante creada para evitar error en la línea created_at = models.DateTimeField(default=ahora)
+#ahora = datetime.datetime.now() #Variante creada para evitar error en la línea created_at = models.DateTimeField(default=ahora)
 
 # Create your models here.
 
 #Aquí abajo se definen las clases(MiClase y MiClase2) que representan las tablas en la base de datos.
-#Como mi proyecto es un diario, la clase podría llamarse 'Entrada' o 'Posteo', pero para mantener un orden y no
-#confundirme dejaré los ejemplos de mi profesor tal cual los dejó en el curso.
-
-
 
 class Entrada(models.Model):
     id_entrada = models.AutoField(primary_key=True) #AutoField, campo de clave primaria, se autoincrementa automáticamente.
@@ -21,7 +17,7 @@ class Entrada(models.Model):
     estado = models.CharField(max_length=100,null=False) #Habilitado o deshabilitado según decida el usuario.
     categoria = models.CharField(max_length=100,null=False) #Categoría de la entrada según decida el usuario.
     class Meta:
-            db_table_comments = "Tabla de las entradas creadas por los usuarios."
+            db_table_comment = "Tabla de las entradas creadas por los usuarios."
     #autor = models.CharField(max_length=25,null=False) #Charfield, texto corto, max_length=25, null=False indica que no puede ser nulo.
     #contenido = models.TextField(max_length=100,null=False) #TextField, texto largo, max_length=100, null=False indica que no puede ser nulo.
     #fecha_hora = models.DateTimeField(max_length=100,null=False) #DateTimeField, fecha y hora, max_length=100, null=False indica que no puede ser nulo.
@@ -42,4 +38,4 @@ class Comentario(models.Model):
     fecha_hora = models.DateTimeField(max_length=100,null=False)
     autor = models.CharField(max_length=25,null=False)
     class Meta:
-        db_table_comments = "Tabla de los comentarios creados por los usuarios."
+        db_table_comment = "Tabla de los comentarios creados por los usuarios."
