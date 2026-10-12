@@ -5,7 +5,7 @@ import datetime
 
 # Create your models here.
 
-#Aquí abajo se definen las clases(MiClase y MiClase2) que representan las tablas en la base de datos.
+#Aquí abajo se definen las clases(Entrada, Comentario) que representarán las tablas en la base de datos.
 
 class Entrada(models.Model):
     id_entrada = models.AutoField(primary_key=True) #AutoField, campo de clave primaria, se autoincrementa automáticamente.
