@@ -25,3 +25,5 @@ class ComentarioSerializer(serializers.ModelSerializer):
         #También hubiera podido ser:
         #fileds = ('atributo_referenciado','atributo_2')
         #Esto para poder Decidir qué atributos de nuestra clase/modelo serializamos.
+        #Como buena práctica siempre deberíamos usar esta forma, ya que al usar '__all__' se podría filtrar información sensible,
+        #siempre es mejor decidir qué atributos llamar de manera explícita.
