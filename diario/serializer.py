@@ -14,16 +14,16 @@ from .models import Comentario
 
 class EntradaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comentario
-        fileds = ('__all__')
+        model = Entrada
+        fields = ('__all__')
         # __'all__' serializa todos los atributos de la clase/modelo.
 
 class ComentarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comentario
-        fileds = ('__all_')
+        fields = ('__all__')
         #También hubiera podido ser:
-        #fileds = ('atributo_referenciado','atributo_2')
+        #fields = ('atributo_referenciado','atributo_2')
         #Esto para poder Decidir qué atributos de nuestra clase/modelo serializamos.
         #Como buena práctica siempre deberíamos usar esta forma, ya que al usar '__all__' se podría filtrar información sensible,
         #siempre es mejor decidir qué atributos llamar de manera explícita.
